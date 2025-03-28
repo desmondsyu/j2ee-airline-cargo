@@ -29,9 +29,7 @@ cd ..
 mvn clean install
 ```
 
-3. Deploy the ear artifact in Wildfly
-
-And start the server
+3. Deploy the ear artifact in Wildfly and start the server
 
 4. Access web UI
 
