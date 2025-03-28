@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @XmlRootElement
 public class CargoEvent implements Serializable {
     @NotEmpty
-    private EventType eventType;
+    private CargoStatus cargoStatus;
     @NotBlank
     @Size(max = 100)
     private String location;
@@ -21,24 +21,24 @@ public class CargoEvent implements Serializable {
     @Size(max = 512)
     private String notes;
 
-    public CargoEvent(EventType eventType, String location, LocalDateTime timestamp, String notes) {
-        this.eventType = eventType;
+    public CargoEvent(CargoStatus cargoStatus, String location, LocalDateTime timestamp, String notes) {
+        this.cargoStatus = cargoStatus;
         this.location = location;
         this.timestamp = timestamp;
         this.notes = notes;
     }
 
-    public CargoEvent(EventType eventType, String location, LocalDateTime timestamp) {
-        this(eventType, location, timestamp, "");
+    public CargoEvent(CargoStatus cargoStatus, String location, LocalDateTime timestamp) {
+        this(cargoStatus, location, timestamp, "");
     }
 
     @NotEmpty
-    public EventType getEventType() {
-        return eventType;
+    public CargoStatus getCargoStatus() {
+        return cargoStatus;
     }
 
-    public void setEventType(@NotEmpty EventType eventType) {
-        this.eventType = eventType;
+    public void setCargoStatus(@NotEmpty CargoStatus cargoStatus) {
+        this.cargoStatus = cargoStatus;
     }
 
     public @NotBlank @Size(max = 100) String getLocation() {

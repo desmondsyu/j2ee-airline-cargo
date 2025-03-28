@@ -34,7 +34,13 @@ public class CargoServiceBean implements CargoServiceRemote {
 
     @Override
     public boolean updateShipmentEvent(String trackingNumber, CargoEvent cargoEvent){
-        return false;
+        CargoShipment cargoShipment = cargoShipmentMap.get(trackingNumber);
+        if(cargoShipment == null){
+            return false;
+        }
+        cargoShipment.getEventHistory().add(cargoEvent);
+        cargoShipment.setStatus(cargoEvent.getCargoStatus());
+        return true;
     }
 
     @Override
