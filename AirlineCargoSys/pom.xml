@@ -12,12 +12,12 @@
       <version>0.0.1-SNAPSHOT</version>
       <type>ejb</type>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>AirlineCargoSys</groupId>-->
-<!--      <artifactId>AirlineCargoSysWeb</artifactId>-->
-<!--      <version>0.0.1-SNAPSHOT</version>-->
-<!--      <type>war</type>-->
-<!--    </dependency>-->
+    <dependency>
+      <groupId>AirlineCargoSys</groupId>
+      <artifactId>AirlineCargoSysWeb</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
   </dependencies>
 
   <build>
@@ -33,10 +33,10 @@
               <groupId>AirlineCargoSys</groupId>
               <artifactId>AirlineCargoSysEJB</artifactId>
             </ejbModule>
-<!--            <webModule>-->
-<!--              <groupId>AirlineCargoSys</groupId>-->
-<!--              <artifactId>AirlineCargoSysWeb</artifactId>-->
-<!--            </webModule>-->
+            <webModule>
+              <groupId>AirlineCargoSys</groupId>
+              <artifactId>AirlineCargoSysWeb</artifactId>
+            </webModule>
           </modules>
         </configuration>
       </plugin>
