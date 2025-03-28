@@ -10,22 +10,24 @@ import java.util.List;
 @XmlRootElement
 public class CargoShipment implements Serializable {
 
-    private static int trackingId = 1;
+//    private static int trackingId = 1;
 
-    private final int trackingNumber;
+    //    private final int trackingNumber;
+    private String trackingNumber;
     @NotNull
     private CargoBookingRequest bookingDetails;
     @NotNull
     private CargoStatus status;
     private final List<CargoEvent> eventHistory = new ArrayList<>();
 
-    public CargoShipment(CargoBookingRequest bookingDetails, CargoStatus status) {
-        this.trackingNumber = trackingId++;
+    public CargoShipment(String trackingNumber, CargoBookingRequest bookingDetails, CargoStatus status) {
+//        this.trackingNumber = trackingId++;
+        this.trackingNumber = trackingNumber;
         this.bookingDetails = bookingDetails;
         this.status = status;
     }
 
-    public int getTrackingNumber() {
+    public String getTrackingNumber() {
         return trackingNumber;
     }
 
@@ -53,5 +55,9 @@ public class CargoShipment implements Serializable {
 
     public void addEvent(CargoEvent event) {
         this.eventHistory.add(event);
+    }
+
+    public void setTrackingNumber(String trackingNumber) {
+        this.trackingNumber = trackingNumber;
     }
 }
