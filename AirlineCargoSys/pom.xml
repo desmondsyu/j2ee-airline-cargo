@@ -12,7 +12,7 @@
   </parent>
 
   <artifactId>AirlineCargoSys</artifactId>
-  <packaging>ear</packaging>  <!-- ✅ Correct for EAR Module -->
+  <packaging>ear</packaging>  
 
   <dependencies>
     <dependency>
