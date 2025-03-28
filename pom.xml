@@ -8,11 +8,11 @@
     <groupId>AirlineCargoSys</groupId>
     <artifactId>AirlineCargoSys-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging> <!-- ✅ Parent POM must use 'pom' -->
+    <packaging>pom</packaging> 
 
     <modules>
-        <module>AirlineCargoSys</module>  <!-- ✅ EAR Module -->
-        <module>AirlineCargoSysEJB</module>  <!-- ✅ EJB Module -->
-        <module>AirlineCargoSysWeb</module>  <!-- ✅ Web Module -->
+        <module>AirlineCargoSys</module> 
+        <module>AirlineCargoSysEJB</module>
+        <module>AirlineCargoSysWeb</module>  
     </modules>
 </project>
