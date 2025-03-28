@@ -8,11 +8,24 @@ The system enables external clients to book cargo shipments, retrieve shipment s
 
 ```bash
 git clone https://github.com/desmondsyu/AirlineCargo.git
-cd StockTradingSystem
+cd AirlineCargo
 ```
 2. Build each module
 
 ```bash
+cd AirlineCargoSys
+mvn clean install
+```
+```bash
+cd AirlineCargoSysEJB
+mvn clean install
+```
+```bash
+cd AirlineCargoSysWeb
+mvn clean install
+```
+```bash
+cd ..
 mvn clean install
 ```
 
@@ -23,12 +36,14 @@ And start the server
 4. Access web UI
 
 ```
-http://localhost:8080
+http://localhost:8080/AirlineCargoSysWeb/dashboard.jsp
 ```
 
 ## WSDL endpoint URL
 
-[]
+```
+http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
+```
 
 ## Sample SOAP requests/responses
 
