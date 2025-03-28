@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/application_10.xsd" id="Application_ID" version="10">
-  <display-name>AirlineCargoSys</display-name>
-  <library-directory>lib</library-directory>
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                                 http://java.sun.com/xml/ns/javaee/application_6.xsd"
+             version="6">
+
+  <display-name>Airline Cargo System</display-name>
+
+  <module>
+    <ejb>AirlineCargoSysEJB-0.0.1-SNAPSHOT.jar</ejb>
+  </module>
+
+  <module>
+    <web>
+      <web-uri>AirlineCargoSysWeb-0.0.1-SNAPSHOT.war</web-uri>
+      <context-root>/AirlineCargoSysWeb</context-root>
+    </web>
+  </module>
 </application>

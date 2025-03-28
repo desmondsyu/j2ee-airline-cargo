@@ -20,6 +20,9 @@ public class CargoShipment implements Serializable {
     private CargoStatus status;
     private final List<CargoEvent> eventHistory = new ArrayList<>();
 
+    public CargoShipment() {
+    }
+
     public CargoShipment(String trackingNumber, CargoBookingRequest bookingDetails, CargoStatus status) {
 //        this.trackingNumber = trackingId++;
         this.trackingNumber = trackingNumber;
