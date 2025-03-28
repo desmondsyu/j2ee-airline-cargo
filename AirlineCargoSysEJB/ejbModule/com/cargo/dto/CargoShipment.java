@@ -1,3 +1,5 @@
+package com.cargo.dto;
+
 import jakarta.validation.constraints.NotNull;
 import jakarta.xml.bind.annotation.XmlRootElement;
 

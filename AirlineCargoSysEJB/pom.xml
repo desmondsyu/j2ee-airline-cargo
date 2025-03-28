@@ -1,9 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>AirlineCargoSysEJB</groupId>
+
+  <groupId>AirlineCargoSys</groupId>
   <artifactId>AirlineCargoSysEJB</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>ejb</packaging>
+
   <dependencies>
     <dependency>
       <groupId>jakarta.activation</groupId>
@@ -95,11 +97,7 @@
       <artifactId>jakarta.servlet.jsp-api</artifactId>
       <version>3.1.1</version>
     </dependency>
-    <dependency>
-      <groupId>org.glassfish.web</groupId>
-      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
-      <version>3.0.1-jbossorg-1</version>
-    </dependency>
+
     <dependency>
       <groupId>jakarta.servlet.jsp.jstl</groupId>
       <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
@@ -541,7 +539,7 @@
         <artifactId>maven-ejb-plugin</artifactId>
         <version>3.0.1</version>
         <configuration>
-          <ejbVersion>4.0</ejbVersion>
+          <ejbVersion>3.0</ejbVersion>
         </configuration>
       </plugin>
       <plugin>
