@@ -21,6 +21,14 @@ public class CargoEvent implements Serializable {
     @Size(max = 512)
     private String notes;
 
+    public CargoEvent() {
+    }
+
+    public CargoEvent(CargoStatus cargoStatus) {
+        this.cargoStatus = cargoStatus;
+    }
+
+
     public CargoEvent(CargoStatus cargoStatus, String location, LocalDateTime timestamp, String notes) {
         this.cargoStatus = cargoStatus;
         this.location = location;

@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Stateless
-@WebService(endpointInterface = "com.example.ejb.CargoServiceRemote")
+@Stateless(name = "CargoServiceBean", mappedName = "java:global/AirlineCargoSys/CargoServiceBean")
+@WebService(endpointInterface = "com.cargo.service.CargoServiceRemote")
 public class CargoServiceBean implements CargoServiceRemote {
     private static final Map<String, CargoShipment> cargoShipmentMap = new HashMap<>();
 
