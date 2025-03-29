@@ -12,16 +12,17 @@ cd AirlineCargo
 ```
 2. Build each module
 
-```bash
-cd AirlineCargoSys
-mvn clean install
-```
+
 ```bash
 cd AirlineCargoSysEJB
 mvn clean install
 ```
 ```bash
 cd AirlineCargoSysWeb
+mvn clean install
+```
+```bash
+cd AirlineCargoSys
 mvn clean install
 ```
 ```bash
@@ -47,9 +48,9 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 
 ---
 
-### 📦 1. `bookShipment`
+###  1. `bookShipment`
 
-### ➡️ **Request:**
+###  **Request:**
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -73,7 +74,7 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 </soapenv:Envelope>
 ```
 
-### ⬅️ **Response:**
+###  **Response:**
 ```xml
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
@@ -86,9 +87,9 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 
 ---
 
-### 📡 2. `getShipmentStatus`
+### 2. `getShipmentStatus`
 
-### ➡️ **Request:**
+###  **Request:**
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -102,7 +103,7 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 </soapenv:Envelope>
 ```
 
-### ⬅️ **Response:**
+###  **Response:**
 ```xml
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
@@ -115,9 +116,9 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 
 ---
 
-### 🔄 3. `updateShipmentEvent`
+###  3. `updateShipmentEvent`
 
-### ➡️ **Request:**
+###  **Request:**
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -135,7 +136,7 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 </soapenv:Envelope>
 ```
 
-### ⬅️ **Response:**
+###  **Response:**
 ```xml
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
@@ -148,9 +149,9 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 
 ---
 
-### ❌ 4. `cancelShipment`
+###  4. `cancelShipment`
 
-### ➡️ **Request:**
+###  **Request:**
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -164,7 +165,7 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 </soapenv:Envelope>
 ```
 
-### ⬅️ **Response:**
+###  **Response:**
 ```xml
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
@@ -177,9 +178,9 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 
 ---
 
-### 📋 5. `getShipmentByShipper`
+###  5. `getShipmentByShipper`
 
-### ➡️ **Request:**
+###  **Request:**
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -193,7 +194,7 @@ http://localhost:8080/AirlineCargoSysWeb/CargoService?wsdl
 </soapenv:Envelope>
 ```
 
-### ⬅️ **Response:**
+###  **Response:**
 ```xml
 <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
    <S:Body>
